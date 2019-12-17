@@ -8,6 +8,7 @@ const Home = () => import('@/views/Home')
 
 // Views
 const Dashboard = () => import('@/views/Dashboard')
+const Login = () => import('@/views/Login')
 
 //CateLog
 const CategoryList = () => import('@/views/catalog/CategoryList')
@@ -74,6 +75,11 @@ function configRoutes() {
             name: 'Home',
             component: Home
         },
+        {
+            path: '/login',
+            name: 'Login',
+            component: Login
+        },  
         {
             path: '/',
             name: 'Home',
